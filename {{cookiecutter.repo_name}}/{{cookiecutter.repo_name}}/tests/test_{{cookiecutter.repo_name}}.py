@@ -1,12 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""
-test_{{ cookiecutter.repo_name }}
-----------------------------------
-
-Tests for `{{ cookiecutter.repo_name }}` module.
-"""
+"""Unit tests for the `{{ cookiecutter.repo_name }}` module."""
 
 import unittest
 
