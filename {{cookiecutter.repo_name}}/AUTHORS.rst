@@ -2,10 +2,10 @@
 Credits
 =======
 
-Development Lead
-----------------
+Author and Maintainer
+---------------------
 
-* {{ cookiecutter.full_name }} <{{ cookiecutter.email }}>
+* {{ cookiecutter.full_name }} <https://github.com/{{ cookiecutter.github_username }}>
 
 Contributors
 ------------
