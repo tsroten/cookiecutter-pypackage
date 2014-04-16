@@ -16,7 +16,7 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 
-open_file(filename):
+def open_file(filename):
     """Open and read the file *filename*."""
     with open(filename) as f:
         return f.read()
