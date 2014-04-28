@@ -103,10 +103,3 @@ Before you submit a pull request, check that it meets these guidelines:
    https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/pull_requests
    and make sure that the tests pass for all supported Python versions.
 4. If you want to receive credit, add your name to `AUTHORS.rst`.
-
-Tips
-----
-
-To run a subset of tests::
-
-	$ python -m unittest tests.test_{{ cookiecutter.repo_name }}
