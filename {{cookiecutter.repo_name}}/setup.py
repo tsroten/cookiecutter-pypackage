@@ -1,25 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from io import open
 import os
 import sys
 
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup
 
 import {{ cookiecutter.repo_name }}
-
-if sys.argv[-1] == 'publish':
-    os.system('python setup.py sdist upload')
-    sys.exit()
 
 
 def open_file(filename):
     """Open and read the file *filename*."""
     with open(filename) as f:
         return f.read()
+
 
 readme = open_file('README.rst')
 history = open_file('HISTORY.rst').replace('.. :changelog:', '')
@@ -50,6 +45,8 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
-    test_suite='{{ cookiecutter.repo_name }}.tests',
+    test_suite='tests',
 )
